@@ -319,7 +319,18 @@ img {
       width: 16px;
       height: 12px;
    }
+}
 
+.skills {
+   background-color: #fff;
+   color: #3c4761;
+
+   &__title {
+
+      &:after {
+         background-color: rgb(223, 232, 237)
+      }
+   }
 }
 
 @media screen and (max-width: 805px) {

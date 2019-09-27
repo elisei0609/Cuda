@@ -319,6 +319,15 @@ img {
   height: 12px;
 }
 
+.skills {
+  background-color: #fff;
+  color: #3c4761;
+}
+
+.skills__title:after {
+  background-color: #dfe8ed;
+}
+
 @media screen and (max-width: 805px) {
   html {
     font-size: 12px;
