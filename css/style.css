@@ -282,6 +282,43 @@ img {
   background-color: #bdd1df;
 }
 
+.social-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.svg {
+  fill: #fff;
+}
+
+.svg__twitter {
+  width: 17px;
+  height: 14px;
+}
+
+.svg__facebook {
+  width: 8px;
+  height: 16px;
+}
+
+.svg__linkedin {
+  width: 16px;
+  height: 16px;
+}
+
+.svg__message {
+  width: 16px;
+  height: 12px;
+}
+
 @media screen and (max-width: 805px) {
   html {
     font-size: 12px;

@@ -19,6 +19,7 @@
 
 
 
+
 $container : 1140px;
 
 //
@@ -287,6 +288,38 @@ img {
       border-radius: 50%;
       background-color: #bdd1df;
    }
+
+   &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+   }
+}
+
+.svg {
+   fill: #fff;
+
+   &__twitter {
+      width: 17px;
+      height: 14px;
+   }
+
+   &__facebook {
+      width: 8px;
+      height: 16px;
+   }
+
+   &__linkedin {
+      width: 16px;
+      height: 16px;
+   }
+
+   &__message {
+      width: 16px;
+      height: 12px;
+   }
+
 }
 
 @media screen and (max-width: 805px) {
