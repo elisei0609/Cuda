@@ -156,15 +156,10 @@ img {
    &__text {
       font-size: get-rem(18);
       line-height: 1.44;
-      max-width: 615px;
+      max-width: 620px;
       margin: 0 auto;
       margin-bottom: get-rem(80);
    }
-}
-
-
-.services {
-   background-color: #17c2a4;
 }
 
 .super-list {
@@ -184,7 +179,12 @@ img {
    }
 
    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       max-width: 260px;
+      padding: 0 30px;
+
    }
 
    &__container {
@@ -194,7 +194,6 @@ img {
 }
 
 .item-services {
-   padding: 0 30px;
 
    &__container {
       margin-bottom: 50px;
@@ -236,12 +235,57 @@ img {
 
 
 .services {
+   background-color: #17c2a4;
 
    &__title {
 
       &:after {
          background-color: #00000025;
       }
+   }
+}
+
+.team {
+   background-color: #e7f1f8;
+   color: #3c4761;
+
+   &__title {
+
+      &:after {
+         background-color: #bdd1dfbf;
+      }
+   }
+}
+
+.item-team {
+
+   &__container {
+      margin-bottom: 40px;
+   }
+
+   &__title {
+      margin-bottom: 15px;
+      min-height: 48px;
+   }
+
+   &__text {
+      margin-bottom: 30px;
+   }
+
+   &__subtitle {
+      min-height: 36px;
+   }
+}
+
+.social-list {
+   display: flex;
+   justify-content: space-evenly;
+
+   &__item {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #bdd1df;
    }
 }
 
@@ -313,7 +357,6 @@ img {
    }
 
    .item-services {
-
       margin-bottom: 30px;
 
       &__title {
@@ -323,7 +366,28 @@ img {
 
       &__container {
          margin-bottom: 35px;
+         max-width: 200px;
+         margin: 0 auto;
       }
+   }
+
+   .item-team {
+      margin-bottom: 25px;
+
+      &__title {
+         margin-bottom: 10px;
+         min-height: 0;
+      }
+
+      &__subtitle {
+         margin-bottom: 10px;
+         min-height: 0;
+      }
+
+      &__text {
+         margin-bottom: 25px;
+      }
+
    }
 }
 
@@ -333,6 +397,13 @@ img {
 
       &:last-child {
          margin-bottom: 0;
+      }
+   }
+
+   .item-team {
+
+      &__container {
+         margin-bottom: 30px;
       }
    }
 }

@@ -142,13 +142,9 @@ img {
 .section__text {
   font-size: 1.125rem;
   line-height: 1.44;
-  max-width: 615px;
+  max-width: 620px;
   margin: 0 auto;
   margin-bottom: 5rem;
-}
-
-.services {
-  background-color: #17c2a4;
 }
 
 .super-list {
@@ -173,15 +169,22 @@ img {
 }
 
 .super-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 260px;
+  padding: 0 30px;
 }
 
 .super-list__container {
   width: 100%;
-}
-
-.item-services {
-  padding: 0 30px;
 }
 
 .item-services__container {
@@ -229,8 +232,54 @@ img {
           transform: translateX(0);
 }
 
+.services {
+  background-color: #17c2a4;
+}
+
 .services__title:after {
   background-color: #00000025;
+}
+
+.team {
+  background-color: #e7f1f8;
+  color: #3c4761;
+}
+
+.team__title:after {
+  background-color: #bdd1dfbf;
+}
+
+.item-team__container {
+  margin-bottom: 40px;
+}
+
+.item-team__title {
+  margin-bottom: 15px;
+  min-height: 48px;
+}
+
+.item-team__text {
+  margin-bottom: 30px;
+}
+
+.item-team__subtitle {
+  min-height: 36px;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.social-list__item {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #bdd1df;
 }
 
 @media screen and (max-width: 805px) {
@@ -309,6 +358,22 @@ img {
   }
   .item-services__container {
     margin-bottom: 35px;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .item-team {
+    margin-bottom: 25px;
+  }
+  .item-team__title {
+    margin-bottom: 10px;
+    min-height: 0;
+  }
+  .item-team__subtitle {
+    margin-bottom: 10px;
+    min-height: 0;
+  }
+  .item-team__text {
+    margin-bottom: 25px;
   }
 }
 
@@ -318,6 +383,9 @@ img {
   }
   .item-services:last-child {
     margin-bottom: 0;
+  }
+  .item-team__container {
+    margin-bottom: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
