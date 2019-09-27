@@ -120,38 +120,6 @@ button {
 
 .burger {
    display: none;
-   justify-content: center;
-   align-items: center;
-   position: relative;
-   cursor: pointer;
-
-   &__line {
-      display: inline-block;
-      width: 25px;
-      height: 3px;
-      margin: 10px 0;
-      background-color: rgb(226, 226, 226);
-
-      &:before {
-         content: '';
-         position: absolute;
-         top: 0;
-         display: inline-block;
-         width: 25px;
-         height: 3px;
-         background-color: rgb(226, 226, 226);
-      }
-
-      &:after {
-         content: '';
-         position: absolute;
-         bottom: 0;
-         display: inline-block;
-         width: 25px;
-         height: 3px;
-         background-color: rgb(226, 226, 226);
-      }
-   }
 }
 
 @media screen and (max-width: 805px) {
@@ -166,6 +134,55 @@ button {
    .burger {
       display: flex;
       z-index: 5;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+
+      &__line {
+         display: inline-block;
+         width: 25px;
+         height: 3px;
+         margin: 10px 0;
+         background-color: rgb(226, 226, 226);
+
+         &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            display: inline-block;
+            width: 25px;
+            height: 3px;
+            background-color: rgb(226, 226, 226);
+         }
+
+         &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            display: inline-block;
+            width: 25px;
+            height: 3px;
+            background-color: rgb(226, 226, 226);
+         }
+      }
+
+      &--active {
+         transform: rotate(45deg);
+
+         .burger__line {
+            margin: 0;
+
+            &:before {
+               content: none;
+            }
+
+            &:after {
+               transform: rotate(90deg);
+            }
+         }
+
+      }
    }
 
    .nav {
@@ -193,6 +210,4 @@ button {
       display: block;
       transform: translateX(0);
    }
-
-
 }
