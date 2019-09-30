@@ -36,7 +36,7 @@ const addClass = () => {
   document.removeEventListener("scroll", scroll, false);
 };
 
-// 
+//
 
 const scroll = () => {
   const elem = document.getElementById("skillsSection");
@@ -46,3 +46,18 @@ const scroll = () => {
 // Adding scroll listener and with a scroll function
 
 document.addEventListener("scroll", scroll);
+
+const label = () => {
+  const labels = document.querySelector(".contact__form");
+  labels.addEventListener("change", function(e) {
+    if (e.target.classList.contains("label__input")) {
+      e.target.closest(".label").style.color = "transparent";
+      e.target.previousElementSibling.style.color = "transparent";
+      if (e.target.value == "") {
+        e.target.closest(".label").style.color = "";
+        e.target.previousElementSibling.style.color = "";
+      }
+    }
+  });
+};
+label();

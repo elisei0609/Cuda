@@ -56,6 +56,17 @@ img {
    object-fit: contain;
 }
 
+textarea {
+   border: none;
+   color: inherit;
+}
+
+input {
+   border: none;
+   background-color: initial;
+   color: inherit;
+}
+
 .container {
    max-width: $container;
    margin: 0 auto;
@@ -618,6 +629,110 @@ img {
       max-width: 350px;
    }
 }
+
+.contact {
+   background-color: #3c5499;
+
+   &__address {
+      max-width: 100%;
+   }
+
+   &__name {
+      position: relative;
+
+   }
+
+   &__label {
+      position: relative;
+   }
+
+   &__form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 860px;
+      margin: 0 auto;
+   }
+}
+
+.label {
+   position: relative;
+   display: flex;
+   align-items: center;
+   text-align: left;
+   padding: 18px 0;
+   padding-left: 10px;
+   max-width: 415px;
+   width: 100%;
+   background: #273a71;
+   border-radius: 4px;
+
+   &__star {
+      color: #ff4444;
+      margin-left: 2px;
+   }
+
+   &__input {
+      position: absolute;
+      color: #fff;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      padding-left: 10px;
+
+      &:after {
+         content: '*';
+         color: black;
+      }
+
+      &:focus {
+         background: #273a71;
+         border-radius: 4px;
+      }
+   }
+
+   &__area {
+      background-color: #273a71;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      padding: 15px 10px;
+      z-index: -1;
+
+      &:focus {
+         background: #273a71;
+         border-radius: 4px;
+      }
+   }
+
+   &--first,
+   &--second {
+      margin-bottom: 30px;
+   }
+
+   &--third {
+      align-items: flex-start;
+      height: 100%;
+      max-width: 100%
+   }
+}
+
+.kek {
+   position: relative;
+
+   &:after {
+      content: '*';
+      color: black;
+   }
+}
+
+.keks {
+   background-color: #273a71;
+}
+
 
 
 
