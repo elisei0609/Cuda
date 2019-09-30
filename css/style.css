@@ -469,9 +469,52 @@ img {
   font-size: 2em;
 }
 
+.portfolio {
+  color: #393939;
+  background-color: #ffdd99;
+}
+
+.portfolio__title:after {
+  background-color: #e5c37f;
+}
+
+.tabs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 7.7%;
+}
+
+.tabs-list__item {
+  background-color: #ebc985;
+  margin-right: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.tabs-list__item:last-child {
+  margin-right: 0;
+}
+
+.tabs-list__button {
+  padding: 12px 25px;
+  text-transform: uppercase;
+}
+
+.tabs-list__button--active {
+  background-color: #fff;
+}
+
 @media screen and (max-width: 905px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
   .nav {
     display: none;
