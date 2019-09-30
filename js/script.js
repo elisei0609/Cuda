@@ -48,8 +48,8 @@ const scroll = () => {
 document.addEventListener("scroll", scroll);
 
 const label = () => {
-  const labels = document.querySelector(".contact__form");
-  labels.addEventListener("change", function(e) {
+  const form = document.querySelector(".contact__form");
+  form.addEventListener("change", function(e) {
     if (e.target.classList.contains("label__input")) {
       e.target.closest(".label").style.color = "transparent";
       e.target.previousElementSibling.style.color = "transparent";
@@ -61,3 +61,26 @@ const label = () => {
   });
 };
 label();
+
+const focus = () => {
+  const area = document.querySelector(".label__area");
+  area.addEventListener("focus", function(e) {
+    if (this.parentNode.classList.contains("label__wrapper--star")) {
+      this.placeholder = "";
+      this.parentNode.classList.remove("label__wrapper--star");
+    }
+  });
+};
+focus();
+
+const blur = () => {
+  const area = document.querySelector(".label__area");
+  area.addEventListener("blur", function(e) {
+    if (this.value == "") {
+      this.placeholder = "Your Message";
+      this.parentNode.classList.add("label__wrapper--star");
+    }
+  });
+};
+
+blur();
