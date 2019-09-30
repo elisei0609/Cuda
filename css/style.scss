@@ -713,7 +713,7 @@ img {
       flex-wrap: wrap;
       justify-content: space-evenly;
 
-      &__item{
+      &__item {
          width: 50%;
       }
 
@@ -754,10 +754,10 @@ img {
 
    .item-reviews {
       width: 48%;
-      margin-bottom: 50px;
+      margin-bottom: 100px;
 
       &:nth-child(3) {
-         margin-bottom: 50px;
+         margin-bottom: 0px;
       }
    }
 }
@@ -767,9 +767,17 @@ img {
 
    .item-services {
       margin-bottom: 30px;
-      
+
       &:last-child {
          margin-bottom: 0;
+      }
+   }
+
+   .item-reviews {
+      margin-bottom: 50px;
+
+      &:nth-child(3) {
+         margin-bottom: 50px;
       }
    }
 
