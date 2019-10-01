@@ -875,6 +875,12 @@ svg path {
 .socials__item {
   margin-right: 10px;
   margin-bottom: 5px;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.socials__item:hover {
+  color: #30bae7;
 }
 
 .socials__svg {
