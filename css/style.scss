@@ -520,6 +520,11 @@ svg path {
       margin-bottom: 10px;
       border-radius: 4px;
       overflow: hidden;
+      transition: background 0.2s ease-in-out;
+
+      &:hover {
+         background-color: #efd7a7;
+      }
 
       &:last-child {
          margin-right: 0;

@@ -571,6 +571,12 @@ svg path {
   margin-bottom: 10px;
   border-radius: 4px;
   overflow: hidden;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+
+.tabs-list__item:hover {
+  background-color: #efd7a7;
 }
 
 .tabs-list__item:last-child {
