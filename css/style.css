@@ -49,13 +49,27 @@ svg path {
   padding: 0 1.25rem;
 }
 
-.introduction {
+.first-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
   padding: 4.6% 0;
+}
+
+.introduction {
   background-color: #87509c;
 }
 
 .header {
-  margin-bottom: 8.75rem;
+  margin-bottom: auto;
 }
 
 .header__wrapper {
@@ -102,7 +116,7 @@ svg path {
 
 .greetings {
   text-align: center;
-  margin-bottom: 4%;
+  margin-bottom: auto;
 }
 
 .greetings__title {
@@ -125,7 +139,7 @@ svg path {
 .btn {
   max-width: 293px;
   width: 100%;
-  height: 100%;
+  height: auto;
   padding: 1.8125rem;
   font-size: 1.125rem;
   font-weight: 600;
@@ -873,7 +887,6 @@ svg path {
 }
 
 .socials__item {
-  margin-right: 10px;
   margin-bottom: 5px;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
@@ -1064,10 +1077,9 @@ svg path {
     margin-bottom: 0;
   }
   html {
-    font-size: 13px;
+    font-size: 12px;
   }
   .btn {
-    max-width: 100%;
     width: 100%;
   }
   .btn:hover {
@@ -1077,6 +1089,13 @@ svg path {
   .btn:active {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
+  }
+  .greetings__title {
+    font-size: 25px;
+    margin-bottom: 10.5%;
+  }
+  .greetings__btn {
+    font-size: 16px;
   }
   .item-reviews {
     margin-bottom: 50px;
@@ -1090,9 +1109,8 @@ svg path {
   .super-list__item {
     width: 100%;
   }
-  .socials {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .contact__btn {
+    max-width: 100%;
   }
   .socials__item {
     display: -webkit-box;
@@ -1115,6 +1133,9 @@ svg path {
   }
   .socials__svg {
     display: inline-block;
+  }
+  .footer .container {
+    padding: 0 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
