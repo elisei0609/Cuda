@@ -843,6 +843,7 @@ svg path {
       align-items: center;
       position: relative;
       cursor: pointer;
+      transition: transform 0.3s ease-in-out;
 
       &__line {
          display: inline-block;
@@ -869,20 +870,25 @@ svg path {
             width: 25px;
             height: 3px;
             background-color: rgb(226, 226, 226);
+            transition: transform 0.3s ease-in-out;
          }
       }
 
       &--active {
          transform: rotate(45deg);
+         position: fixed;
+         right: 20px;
 
          .burger__line {
             margin: 0;
+            transition: transform 0.3s ease-in-out;
 
             &:before {
                content: none;
             }
 
             &:after {
+               transition: transform 0.3s ease-in-out;
                transform: rotate(90deg);
             }
          }

@@ -908,6 +908,10 @@ svg path {
             align-items: center;
     position: relative;
     cursor: pointer;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
   .burger__line {
     display: inline-block;
@@ -933,18 +937,32 @@ svg path {
     width: 25px;
     height: 3px;
     background-color: #e2e2e2;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
   .burger--active {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+    position: fixed;
+    right: 20px;
   }
   .burger--active .burger__line {
     margin: 0;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
   .burger--active .burger__line:before {
     content: none;
   }
   .burger--active .burger__line:after {
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
