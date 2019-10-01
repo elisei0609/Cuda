@@ -242,6 +242,12 @@ svg path {
   width: 100%;
 }
 
+.item-services {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .item-services__container {
   margin-bottom: 50px;
   max-height: 134px;

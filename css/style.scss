@@ -236,6 +236,7 @@ svg path {
 }
 
 .item-services {
+   justify-content: flex-start;
 
    &__container {
       margin-bottom: 50px;
@@ -771,7 +772,7 @@ svg path {
          content: '*';
          position: absolute;
          left: 6.5em;
-         top: 0.8em;
+         top: 1.04em;
          display: inline-block;
          color: #ff4444;
       }
