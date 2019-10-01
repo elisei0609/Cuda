@@ -37,6 +37,12 @@ input {
   color: inherit;
 }
 
+svg path {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -261,6 +267,12 @@ input {
   height: 32px;
   border-radius: 50%;
   background-color: #bdd1df;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.social-list__item:hover {
+  background-color: #30bae7;
 }
 
 .social-list__link {
@@ -298,6 +310,26 @@ input {
 .svg__message {
   width: 16px;
   height: 12px;
+}
+
+.svg__google-plus {
+  width: 20px;
+  height: 18px;
+}
+
+.svg__behance {
+  width: 20px;
+  height: 18px;
+}
+
+.svg__dribbble {
+  width: 20px;
+  height: 18px;
+}
+
+.svg__github {
+  width: 20px;
+  height: 18px;
 }
 
 .skills {
@@ -814,6 +846,17 @@ input {
   font-size: 1.5rem;
 }
 
+.socials__item {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.socials__svg {
+  width: 20px;
+  height: 18px;
+  display: none;
+}
+
 @media screen and (max-width: 905px) {
   html {
     font-size: 12px;
@@ -979,6 +1022,32 @@ input {
   }
   .super-list__item {
     width: 100%;
+  }
+  .socials {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .socials__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #bdd1df;
+    border-radius: 50%;
+    -webkit-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+  }
+  .socials__item:hover {
+    background: #30bae7;
+  }
+  .socials__link {
+    padding: 10px;
+    font-size: 0;
+  }
+  .socials__svg {
+    display: inline-block;
   }
 }
 /*# sourceMappingURL=style.css.map */
