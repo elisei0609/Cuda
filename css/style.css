@@ -768,48 +768,6 @@ svg path {
   border-radius: 4px;
 }
 
-.label__area {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: #273a71;
-  padding: 1em 0;
-  padding-left: 0.55em;
-}
-
-.label__area::-webkit-input-placeholder {
-  color: inherit;
-}
-
-.label__area:-ms-input-placeholder {
-  color: inherit;
-}
-
-.label__area::-ms-input-placeholder {
-  color: inherit;
-}
-
-.label__area::placeholder {
-  color: inherit;
-}
-
-.label__wrapper {
-  position: relative;
-  max-height: 200px;
-  width: 100%;
-  height: 200px;
-  margin-bottom: 5%;
-}
-
-.label__wrapper--star:after {
-  content: '*';
-  position: absolute;
-  left: 6.5em;
-  top: 0.8em;
-  display: inline-block;
-  color: #ff4444;
-}
-
 .label__star {
   color: #ff4444;
   margin-left: 2px;
@@ -845,6 +803,48 @@ svg path {
           align-items: flex-start;
   height: 100%;
   max-width: 100%;
+}
+
+.area {
+  position: relative;
+  max-height: 200px;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 5%;
+}
+
+.area__star:after {
+  content: '*';
+  position: absolute;
+  left: 6.5em;
+  top: 0.8em;
+  display: inline-block;
+  color: #ff4444;
+}
+
+.area__input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #273a71;
+  padding: 1em 0;
+  padding-left: 0.55em;
+}
+
+.area__input::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.area__input:-ms-input-placeholder {
+  color: inherit;
+}
+
+.area__input::-ms-input-placeholder {
+  color: inherit;
+}
+
+.area__input::placeholder {
+  color: inherit;
 }
 
 .footer {

@@ -63,22 +63,22 @@ const label = () => {
 label();
 
 const focus = () => {
-  const area = document.querySelector(".label__area");
+  const area = document.querySelector(".area__input");
   area.addEventListener("focus", function(e) {
-    if (this.parentNode.classList.contains("label__wrapper--star")) {
+    if (this.parentNode.classList.contains("area__star")) {
       this.placeholder = "";
-      this.parentNode.classList.remove("label__wrapper--star");
+      this.parentNode.classList.remove("area__star");
     }
   });
 };
 focus();
 
 const blur = () => {
-  const area = document.querySelector(".label__area");
+  const area = document.querySelector(".area__input");
   area.addEventListener("blur", function(e) {
     if (this.value == "") {
       this.placeholder = "Your Message";
-      this.parentNode.classList.add("label__wrapper--star");
+      this.parentNode.classList.add("area__star");
     }
   });
 };
