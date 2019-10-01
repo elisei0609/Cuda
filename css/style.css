@@ -159,7 +159,7 @@ input {
   line-height: 1.44;
   max-width: 620px;
   margin: 0 auto;
-  margin-bottom: 5rem;
+  margin-bottom: 7.3%;
 }
 
 .super-list {
@@ -787,6 +787,31 @@ input {
           align-items: flex-start;
   height: 100%;
   max-width: 100%;
+}
+
+.footer {
+  background-color: #344b8e;
+  padding: 2.9375rem 0;
+}
+
+.footer__socials {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.socials {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.socials__link {
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 905px) {

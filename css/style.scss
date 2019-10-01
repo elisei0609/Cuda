@@ -176,7 +176,7 @@ input {
       line-height: 1.44;
       max-width: 620px;
       margin: 0 auto;
-      margin-bottom: get-rem(80);
+      margin-bottom: 7.3%; 
    }
 }
 
@@ -739,8 +739,26 @@ input {
    }
 }
 
+.footer {
+   background-color: #344b8e;
+   padding: get-rem(47) 0;
+   
+   &__socials {
+      max-width: 950px;
+      margin: 0 auto;
+   }
+}
 
+.socials {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
 
+   &__link {
+      font-weight: 600;
+      font-size: get-rem(24);
+   }
+}
 
 @media screen and (max-width: 905px) {
    html {
