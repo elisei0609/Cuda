@@ -21,10 +21,6 @@
    @return ($percent/100 * 180) * 1deg;
 }
 
-;
-
-
-
 
 $container : 1140px;
 
@@ -653,6 +649,12 @@ input {
       max-width: 860px;
       margin: 0 auto;
    }
+
+   &__btn {
+      margin: 0 auto;
+      background-color: #30bae7;
+      @include box-shadow(#299ec5);
+   }
 }
 
 .label {
@@ -685,6 +687,7 @@ input {
       max-height: 200px;
       width: 100%;
       height: 200px;
+      margin-bottom: 5%;
 
       &--star {
 
@@ -736,23 +739,12 @@ input {
    }
 }
 
-.kek {
-   position: relative;
 
-   &:after {
-      content: '*';
-      color: black;
-   }
-}
-
-.keks {
-   background-color: #273a71;
-}
 
 
 @media screen and (max-width: 905px) {
    html {
-      font-size: 10px;
+      font-size: 12px;
    }
 
    .nav {
@@ -775,6 +767,7 @@ input {
 
       }
    }
+   
 
    .nav--active {
       display: block;
@@ -889,6 +882,11 @@ input {
          margin-bottom: 0px;
       }
    }
+
+   .contact__label {
+      max-width: 100%;
+      width: 100%;
+   }
 }
 
 
@@ -900,6 +898,15 @@ input {
       &:last-child {
          margin-bottom: 0;
       }
+   }
+
+  html {
+     font-size: 13px;
+  }
+
+   .btn {
+      max-width: 100%;
+      width: 100%;
    }
 
    .item-reviews {
