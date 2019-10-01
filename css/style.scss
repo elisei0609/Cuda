@@ -806,16 +806,17 @@ svg path {
    }
 
    .nav {
-      display: none;
+      display: block;
       width: 100vw;
       height: 100vh;
       position: fixed;
       bottom: 0;
       left: 0;
       background: #000000e6;
-      transform: translateX(-100%);
+      transform: translateX(100%);
       max-width: 100vw;
       z-index: 10;
+      transition: transform 0.3s ease-in-out;
 
       &__list {
          flex-direction: column;
@@ -831,6 +832,7 @@ svg path {
    .nav--active {
       display: block;
       transform: translateX(0);
+      transition: transform 0.3s ease-in-out;
    }
 
    .greetings__text--span {

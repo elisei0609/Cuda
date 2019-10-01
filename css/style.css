@@ -862,17 +862,21 @@ svg path {
     font-size: 12px;
   }
   .nav {
-    display: none;
+    display: block;
     width: 100vw;
     height: 100vh;
     position: fixed;
     bottom: 0;
     left: 0;
     background: #000000e6;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     max-width: 100vw;
     z-index: 10;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
   .nav__list {
     -webkit-box-orient: vertical;
@@ -892,6 +896,10 @@ svg path {
     display: block;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
   .greetings__text--span {
     display: inline;
