@@ -87,20 +87,20 @@ svg path {
 }
 
 .header {
-   margin-bottom: auto;
+margin-bottom: auto;
 
    &__wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-left: 4.7%;
+      padding-left: 3.7%;
       margin-bottom: 12.73%;
       text-transform: uppercase;
    }
 }
 
 .nav {
-   max-width: 450px;
+   max-width: 460px;
    width: 100%;
 }
 
@@ -126,7 +126,7 @@ svg path {
    margin-bottom: auto;
 
    &__title {
-      margin-bottom: 5.5%;
+      margin-bottom: get-rem(59)
       font-size: get-rem(42);
       font-weight: bold;
       line-height: 1.2em;
