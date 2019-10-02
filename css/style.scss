@@ -789,6 +789,21 @@ svg path {
       &::placeholder {
          color: inherit;
       }
+
+   }
+
+   &:before {
+      content: '';
+      background-image: url(../img/Arrow.png);
+      position: absolute;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      bottom: 0px;
+      z-index: 1;
+      right: 0;
+
    }
 }
 

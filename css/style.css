@@ -867,6 +867,19 @@ svg path {
   color: inherit;
 }
 
+.area:before {
+  content: '';
+  background-image: url(../img/Arrow.png);
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  bottom: 0px;
+  z-index: 1;
+  right: 0;
+}
+
 .footer {
   background-color: #344b8e;
   padding: 2.9375rem 0;
