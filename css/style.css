@@ -124,6 +124,7 @@ svg path {
   margin-bottom: 5.5%;
   font-size: 2.625rem;
   font-weight: bold;
+  line-height: 1.2em;
 }
 
 .greetings__title--span {
@@ -133,6 +134,7 @@ svg path {
 
 .greetings__btn {
   background-color: #eb7d4b;
+  max-height: 70px;
   -webkit-box-shadow: 0 4px 0 #c86a40;
           box-shadow: 0 4px 0 #c86a40;
 }
