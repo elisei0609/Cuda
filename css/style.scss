@@ -1,9 +1,6 @@
 // Mixins
 
-@function get-vw($target) {
-   $vw-context: (1200*.01) * 1px;
-   @return ($target/$vw-context) * 1vw;
-}
+
 
 @function get-rem($target) {
    @return ($target/16) * 1rem;
