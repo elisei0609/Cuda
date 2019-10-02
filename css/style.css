@@ -279,6 +279,10 @@ svg path {
   background-color: #bdd1dfbf;
 }
 
+.item-team {
+  width: 25%;
+}
+
 .item-team__container {
   margin-bottom: 40px;
 }
@@ -779,6 +783,10 @@ svg path {
           box-shadow: 0 4px 0 #299ec5;
 }
 
+.contact__title:after {
+  background-color: #2e437e;
+}
+
 .label {
   position: relative;
   display: -webkit-box;
@@ -1095,6 +1103,7 @@ svg path {
   }
   .item-team__subtitle {
     margin-bottom: 10px;
+    font-size: 17px;
     min-height: 0;
   }
   .item-team__text {

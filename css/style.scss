@@ -277,6 +277,7 @@ svg path {
 }
 
 .item-team {
+   width: 25%;
 
    &__container {
       margin-bottom: 40px;
@@ -713,6 +714,13 @@ svg path {
       background-color: #30bae7;
       @include box-shadow(#299ec5);
    }
+
+   &__title {
+
+      &:after {
+         background-color: #2e437e;
+      }
+   }
 }
 
 .label {
@@ -1006,6 +1014,7 @@ svg path {
 
       &__subtitle {
          margin-bottom: 10px;
+         font-size: 17px;
          min-height: 0;
       }
 
