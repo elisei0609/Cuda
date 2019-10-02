@@ -73,9 +73,6 @@ svg path {
 }
 
 .first-screen {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
    height: 100vh;
    padding: 4.6% 0;
    padding-top: 57px;
@@ -87,7 +84,7 @@ svg path {
 }
 
 .header {
-margin-bottom: auto;
+   height: fit-content;
 
    &__wrapper {
       display: flex;
@@ -119,14 +116,21 @@ margin-bottom: auto;
          transition: 0.3s ease-in-out;
       }
    }
+
+   &__item {
+      font-size: 16px;
+   }
 }
 
 .greetings {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
    text-align: center;
-   margin-bottom: auto;
+   justify-content: center;
 
    &__title {
-      margin-bottom: get-rem(59)
+      margin-bottom: get-rem(59);
       font-size: get-rem(42);
       font-weight: bold;
       line-height: 1.2em;
@@ -141,6 +145,7 @@ margin-bottom: auto;
       background-color: #eb7d4b;
       max-height: 70px;
       @include box-shadow(#c86a40);
+      margin: 0 auto;
    }
 }
 
@@ -1045,6 +1050,7 @@ margin-bottom: auto;
    .menu {
 
       &__item {
+         font-size: get-rem(1);
          width: 100%;
          padding: 0;
       }
