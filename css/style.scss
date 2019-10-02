@@ -1,6 +1,6 @@
 // Mixins
 
-
+//
 
 @function get-rem($target) {
    @return ($target/16) * 1rem;
@@ -78,6 +78,7 @@ svg path {
    justify-content: center;
    height: 100vh;
    padding: 4.6% 0;
+   padding-top: 57px;
 
 }
 
@@ -92,7 +93,7 @@ svg path {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-left: 5%;
+      padding-left: 4.7%;
       margin-bottom: 12.73%;
       text-transform: uppercase;
    }
@@ -128,6 +129,7 @@ svg path {
       margin-bottom: 5.5%;
       font-size: get-rem(42);
       font-weight: bold;
+      line-height: 1.2em;
 
       &--span {
          display: inline-block;
@@ -137,6 +139,7 @@ svg path {
 
    &__btn {
       background-color: #eb7d4b;
+      max-height: 70px;
       @include box-shadow(#c86a40);
    }
 }
@@ -290,17 +293,19 @@ svg path {
 
    &__subtitle {
       min-height: 36px;
+      color: #30bae7;
    }
 }
 
 .social-list {
    display: flex;
-   justify-content: space-evenly;
+   justify-content: center;
 
    &__item {
       width: 32px;
       height: 32px;
       border-radius: 50%;
+      margin-right: 13px;
       background-color: #bdd1df;
       transition: background 0.3s ease-in-out;
 
@@ -503,6 +508,10 @@ svg path {
       }
    }
 
+   &__text {
+      margin-bottom: 40px;
+   }
+
    &__btn {
       background-color: #17c2a4;
       color: #fff;
@@ -515,7 +524,7 @@ svg path {
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
-   margin-bottom: 7.7%;
+   margin-bottom: 40px;
 
 
    &__item {
@@ -558,7 +567,6 @@ svg path {
 
    &__name {
       text-transform: uppercase;
-      font-size: 18px;
    }
 
 
@@ -845,6 +853,35 @@ svg path {
       font-size: 12px;
    }
 
+   .super-list {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      &__item {
+         width: 50%;
+         margin: 0 16px;
+      }
+
+      &__title {
+         font-size: 20px;
+      }
+
+      &__text {
+         font-size: 14px;
+      }
+   }
+
+   .laptops-list {
+
+      &__name {
+         font-size: 18px;
+      }
+   }
+
+   .first-screen {
+      padding: 4.6% 0;
+   }
+
    .nav {
       display: block;
       width: 100vw;
@@ -852,7 +889,7 @@ svg path {
       position: fixed;
       bottom: 0;
       left: 0;
-      background: #000000e6;
+      background: #792c96;
       transform: translateX(100%);
       max-width: 100vw;
       z-index: 10;
@@ -864,7 +901,7 @@ svg path {
          align-items: center;
          width: 100%;
          height: 100%;
-
+         padding: 15% 0;
       }
    }
 
@@ -937,14 +974,11 @@ svg path {
       }
    }
 
-   .super-list {
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+   .section {
 
-      &__item {
-         width: 50%;
+      &__text {
+         font-size: 17px;
       }
-
    }
 
    .item-services {
@@ -982,6 +1016,7 @@ svg path {
 
    .item-reviews {
       width: 48%;
+      margin: 0;
       margin-bottom: 100px;
 
       &:nth-child(3) {
@@ -992,6 +1027,47 @@ svg path {
    .contact__label {
       max-width: 100%;
       width: 100%;
+   }
+
+   .footer__wrapper {
+      padding: 11% 5px;
+   }
+
+   .menu {
+
+      &__item {
+         width: 100%;
+         padding: 0;
+      }
+
+      &__link {
+         display: block;
+         height: 100%;
+         text-align: center;
+         padding: 25px 0;
+      }
+   }
+
+   .portfolio {
+
+      &__title {
+         margin-bottom: 25px;
+      }
+
+      &__text {
+         margin-bottom: 25px;
+      }
+   }
+
+   .tabs-list {
+      margin-bottom: 25px;
+   }
+
+   .footer {
+
+      &__socials {
+         padding: 0 5px;
+      }
    }
 }
 
@@ -1004,6 +1080,18 @@ svg path {
       &:last-child {
          margin-bottom: 0;
       }
+   }
+
+   .super-list {
+
+      &__title {
+         font-size: 24px;
+      }
+
+      &__text {
+         font-size: 15px;
+      }
+
    }
 
    html {
@@ -1023,7 +1111,7 @@ svg path {
    }
 
    .greetings__title {
-      font-size: 25px;
+      font-size: 28px;
       margin-bottom: 10.5%;
    }
 
@@ -1039,12 +1127,26 @@ svg path {
       }
    }
 
-
    .item-team {
 
       &__container {
          margin-bottom: 30px;
       }
+   }
+
+   .reviews-text {
+
+      &__name {
+         font-size: 20px;
+      }
+
+      &__position {
+         font-size: 16px;
+      }
+   }
+
+   .tabs-list__button {
+      padding: 12px 19px;
    }
 
    .super-list {
@@ -1056,6 +1158,26 @@ svg path {
 
    .contact__btn {
       max-width: 100%;
+   }
+
+   .contact {
+
+      &__wrapper {
+         padding: 11% 5px;
+      }
+   }
+
+   .section {
+
+      &__text {
+         font-size: 17px;
+      }
+
+      &__title {
+         font-size: 30px;
+      }
+
+
    }
 
    .socials {
@@ -1073,7 +1195,7 @@ svg path {
       }
 
       &__link {
-         padding: 10px;
+         padding: 8px;
          font-size: 0;
       }
 
